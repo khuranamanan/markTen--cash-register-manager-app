@@ -15,6 +15,8 @@ function hideMessage(){
     errorMessage.style.display = "none";
 }
 
+hideMessage();
+
 btnCheck.addEventListener("click", () =>{
     hideMessage();
     if (inputBillAmount.value > 0){
