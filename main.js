@@ -20,7 +20,7 @@ hideMessage();
 btnCheck.addEventListener("click", () =>{
     hideMessage();
     if (inputBillAmount.value > 0){
-        if (inputCashGiven.value >= inputBillAmount.value){
+        if (Number(inputCashGiven.value) >= Number(inputBillAmount.value)){
             var balanceAmount = inputCashGiven.value - inputBillAmount.value;
             notesToGive(balanceAmount);
         }
