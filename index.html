@@ -10,10 +10,14 @@
 <body>
     <div class="container">
         <Header>
-            <h1>Cash Register Manager</h1>
-            <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+            <div class="header-main">
+                <h1>Cash Register Manager</h1>
+                <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+            </div>
         </Header>
         <main>
+            <p class="error-message"></p>
+            
             <label for="input-Bill-Amount">Bill Amount:</label>
             <input type="number" class="input-Bill-Amount">
     
@@ -21,8 +25,6 @@
             <input type="number" class="input-Cash-Given">
     
             <button id="btn-Check">Check</button>
-
-            <p class="error-message"></p>
     
             <table>
                 <caption> Return Change: </caption>
@@ -48,7 +50,28 @@
                 </tr>
             </table>
         </main>
-        <footer></footer>
+        <footer>
+            <div>
+                <div class="footer-heading">Social Media Links</div>
+                <ul class="list-style-none">
+                    <li class="list-inline">
+                        <a href="https://github.com/khuranamanan" class="link-social links">
+                            <img src="images/GitHub-Mark-Light-64px.png" alt="Github Profile Link" class="footer-img">
+                        </a>
+                    </li>
+                    <li class="list-inline">
+                        <a href="https://www.linkedin.com/in/manan-khurana-1b135b19b/" class="link-social links">
+                            <img src="images/LinkedIn.svg" alt="linkedIn profile link" class="footer-img">
+                        </a>
+                    </li>
+                    <li class="list-inline">
+                        <a href="https://twitter.com/manankhurrana" class="link-social links">
+                            <img src="images/Twitter.svg" alt="Twitter profile Link" class="footer-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="main.js"></script>
